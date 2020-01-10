@@ -1,6 +1,8 @@
 # bee_me
 
-A new Flutter project.
+A bee project
+![Actions Status](https://github.com/Ulzzon/my_bees/workflows/Dart%20CI/badge.svg)]
+
 
 ## Getting Started
 
