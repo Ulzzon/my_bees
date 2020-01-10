@@ -5,6 +5,7 @@
 // gestures. You can also use WidgetTester to find child widgets in the widget
 // tree, read text, and verify that the values of widget properties are correct.
 
+import 'package:My_Bees/login.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
@@ -18,12 +19,12 @@ void main() {
       await tester.pumpWidget(MyApp());
 
       // Verify that our counter starts at 0.
-      var date = DateTime.now();
-      var formatedDate = new DateFormat('yyyy-MM-dd');
-      expect(find.text(formatedDate.format(date).toString()), findsOneWidget);
-
+      //var date = DateTime.now();
+      //var formatedDate = new DateFormat('yyyy-MM-dd');
+      // expect(find.text(formatedDate.format(date).toString()), findsOneWidget);
+      expect(find.text('Todays date:'), findsOneWidget);
       // Tap the '+' icon and trigger a frame.
-      await tester.tap(find.text(formatedDate.format(date).toString()));
+      //await tester.tap(find.text(formatedDate.format(date).toString()));
       
       //await tester.pump();
 

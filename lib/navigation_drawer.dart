@@ -1,4 +1,7 @@
+import 'package:My_Bees/settings.dart';
 import 'package:flutter/material.dart';
+
+import 'login.dart';
 
 class NavigationDrawer extends Drawer{
 
@@ -16,6 +19,14 @@ class NavigationDrawer extends Drawer{
             ),
           ),
           ListTile(
+            title: Text('Login'),
+            onTap: () {
+              Navigator.push(context,
+              MaterialPageRoute(builder: (context) => Login()),);
+              //Navigator.pop(context);
+            },
+          ),
+          ListTile(
             title: Text('Feed'),
             onTap: () {
               Navigator.pop(context);
@@ -30,7 +41,8 @@ class NavigationDrawer extends Drawer{
           ListTile(
             title: Text('Settings'),
             onTap: () {
-              Navigator.pop(context);
+              Navigator.push(context, 
+              MaterialPageRoute(builder: (context) => SettingsPage()));
             },
           ),
         ],
